@@ -15,6 +15,10 @@ iframe {
   font-family: "Oleo Script", cursive;
 }
 
+.card-title {
+  font-size: 1rem;
+}
+
 /* .space {
   width: 2rem;
 } */

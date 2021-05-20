@@ -4,7 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -30,9 +29,13 @@
     <!-- Header starts-------->
     <header>
       <!-- Nav starts --------->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="home">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark"
+        id="home"
+        role="navigation"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand fw-bold py-1 px-2 heading-main" href="#"
+          <a class="navbar-brand fw-bold py-1 px-2 heading-main" href="#home"
             >Vintage Cars</a
           >
           <button
@@ -58,20 +61,20 @@
         </div>
       </nav>
       <!-- Nav ends ----------->
-      <h1 class="heading-main text-center py-4 shadow-sm">
+      <h1 class="heading-main text-center py-4 shadow-sm" role="banner">
         Vintage cars for hire
       </h1>
     </header>
-    <!-- Header ends-------->
-    <!-- Main starts-------->
-    <main class="container">
+    <!-- Header ends---------->
+    <!-- Main starts---------->
+    <main class="container" role="main">
       <!-- Cars section ------->
       <section id="cars" class="mt-5">
         <h4 class="fw-bold">Car Listing</h4>
         <div class="row">
           <!-- 1st car -->
           <div class="col-lg-3 col-md-6">
-            <div class="card shadow-sm mb-4">
+            <div class="card shadow-sm mb-4" role="figure">
               <img
                 src="./images/yellow_car.jpg"
                 class="card-img-top imagestyle"
@@ -90,7 +93,7 @@
           </div>
           <!-- 2nd car -->
           <div class="col-lg-3 col-md-6">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm mb-4" role="figure">
               <img
                 src="./images/lightBlue_car.jpg"
                 class="card-img-top imagestyle"
@@ -109,7 +112,7 @@
           </div>
           <!-- 3rd car -->
           <div class="col-lg-3 col-md-6">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm mb-4" role="figure">
               <img
                 src="./images/green_car.jpg"
                 class="card-img-top imagestyle"
@@ -128,7 +131,7 @@
           </div>
           <!-- 4th car -->
           <div class="col-lg-3 col-md-6">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm mb-4" role="figure">
               <img
                 src="./images/pink_car.jpg"
                 class="card-img-top imagestyle"
@@ -180,7 +183,7 @@
             <label for="form-select" class="form-label">Choose a car</label>
             <select
               class="form-select mb-3"
-              aria-label="Default select example"
+              aria-label="Default select options"
             >
               <option selected>Open this select menu</option>
               <option value="1">Vintage Yellow Car</option>
@@ -197,19 +200,22 @@
               class="form-control mb-3"
               placeholder="Leave a comment here"
               id="floatingTextarea"
+              contenteditable="true"
+              aria-multiline="true"
+              aria-labelledby="txtboxMultilineLabel"
             ></textarea>
-
             <!-- Ends textarea input -->
           </div>
           <!-- Submit button -------->
-          <button type="submit" class="btn btn-primary mb-3">Submit</button>
+          <button type="submit" class="btn btn-primary mb-3" role="button">
+            Submit
+          </button>
         </form>
       </section>
       <!-- Contact section ---->
       <section id="contact" class="my-5">
         <h4 class="fw-bold">Contact</h4>
-        <!-- <div class="row container py-1"> -->
-        <div class="col d-flex container">
+        <div class="row">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5303.665574787591!2d-122.41951001256318!3d37.776482233618104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085815c67b3754d%3A0xe1469f26aec0b147!2s1355%20Market%20St%2C%20San%20Francisco%2C%20CA%2094103%2C%20USA!5e0!3m2!1sen!2sau!4v1621474537307!5m2!1sen!2sau"
             width="400"
@@ -217,7 +223,8 @@
             allowfullscreen=""
             loading="lazy"
           ></iframe>
-          <div class="space"></div>
+        </div>
+        <div class="row py-3">
           <address>
             <strong>Vintage Car, Inc.</strong><br />
             1355 Market St, Suite 900 <br />
@@ -226,7 +233,6 @@
             <span class="fw-bold">Email:</span> abc@hotmail.com
           </address>
         </div>
-        <!-- </div> -->
       </section>
     </main>
     <!-- Main ends-------->

@@ -2,6 +2,23 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+iframe {
+  border: none;
+}
+
+.imagestyle {
+  border-radius: 10%;
+}
+
+.heading-main {
+  font-family: "Oleo Script", cursive;
+}
+
+.space {
+  width: 2rem;
+}
+
 .card {
-  width: 16rem;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
 }
